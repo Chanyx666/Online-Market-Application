@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Online_Market_Application.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <StackLayout Margin="15,130,15,0">
+
+                    <Frame BackgroundColor="#1d1d1d" HasShadow="True" CornerRadius="10" Margin="20,0" HeightRequest="370" HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand" Margin="0, 10">
+                                <Label Text="Sign In" TextColor="white" FontSize="Large" FontAttributes="Bold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,25,0,0">
+                                <Frame BackgroundColor="white" BorderColor="DarkGray" Padding="10,0" Margin="10,0,10,0" CornerRadius="8" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Entry Placeholder="Username" PlaceholderColor="gray" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="white" BorderColor="DarkGray" Padding="10,0" Margin="10,20,10,0" CornerRadius="8" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Entry Placeholder="Password" IsPassword="True" TextColor="black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="10, 0">
+                                <CheckBox IsChecked="False" Color="#00aaff" Margin="0,10,0,0"/>
+                                <Label Text="Remember me" TextColor="white" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Margin="0,10,0,0"/>
+
+                                <Label Text="Forgot Password" HorizontalTextAlignment="End" TextColor="white" HorizontalOptions="EndAndExpand" FontAttributes="Bold" VerticalTextAlignment="Center" Margin="0,10,0,0" FontSize="Small">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+
+                            </StackLayout>
+
+
+                            <Button Text="SIGN IN" BackgroundColor="#00aaff" TextColor="White" HeightRequest="40" FontAttributes="Bold" CornerRadius="10" Margin="40,15,40,0" Clicked="AuthenticateLogin"/>
+
+                            <StackLayout Orientation="Horizontal" Margin="90,0,0,0">
+                                <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center" AlignContent="Center">
+                                    <Label Text="Still Not Connected ? " TextColor="white" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Small"/>
+                                    <Button Text="Sign Up" Padding="0"  TextColor="#00aaff" FontAttributes="Bold" BackgroundColor="Transparent"/>
+                                </FlexLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

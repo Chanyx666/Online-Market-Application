@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Online_Market_Application.Views.SignupPage"
+             Shell.NavBarIsVisible="True">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                    <Frame BackgroundColor="Black" HeightRequest="250" HorizontalOptions="FillAndExpand">
+
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="15,20,15,0">
+
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="550" HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="SIGN UP" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,25,0,0">
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="First Name" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="15,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="Last Name" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="15,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="Phone number" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="15,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <Entry Placeholder="Birth Date" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="15,0,15,0">
+
+                                        </Entry>
+
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="Username" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="15,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,5,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+
+
+                                        <Entry Placeholder="Password" IsPassword="True" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="15,0,15,0"/>
+                                    </StackLayout>
+                                </Frame>
+
+                                <Label Text="Gender" TextColor="Black" FontSize="Medium" Margin="20,0,0,0"/>
+                                <RadioButton Content="Male" HorizontalOptions="Start"/>
+                                <RadioButton Content="Female" Margin="0,0,0,0"/>
+
+                                <Button Text="Register" BackgroundColor="Black" TextColor="White" FontAttributes="Bold" CornerRadius="30" Margin="0,15,0,0"/>
+
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Label Text="Already have an account ? " HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" FontSize="Small"/>
+
+                                    <Label Text="Sign In" HorizontalTextAlignment="Center" TextColor="Black" HorizontalOptions="EndAndExpand" FontAttributes="Bold" VerticalOptions="End" FontSize="Medium"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
