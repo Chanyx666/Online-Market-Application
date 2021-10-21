@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Online_Market_Application.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class HomePage : MasterDetailPage
     {
         public HomePage()
         {
