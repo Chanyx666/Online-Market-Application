@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:Online_Market_Application.Views"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Online_Market_Application.Views.HomePage"
              NavigationPage.HasNavigationBar="False">
@@ -14,8 +15,9 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <ContentPage Title="Ths is a view"></ContentPage>
+                <local:BottomHomePage/>
             </x:Arguments>
         </NavigationPage>
+        
     </MasterDetailPage.Detail>
 </MasterDetailPage>
