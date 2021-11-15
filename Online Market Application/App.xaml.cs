@@ -14,7 +14,7 @@ namespace Online_Market_Application
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new SplashPage();
+            MainPage = new SplashScreen();
         }
 
         protected override void OnStart()

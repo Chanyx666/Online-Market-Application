@@ -2,6 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Online_Market_Application.Views.BottomHomePage"
+             xmlns:local="clr-namespace:Online_Market_Application.Views"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom"
              android:TabbedPage.BarItemColor="#4d4d4d"
@@ -12,17 +13,17 @@
     <TabbedPage.Children>
         <NavigationPage Title="My Items">
             <x:Arguments>
-                <ContentPage Title="My Items"  NavigationPage.HasNavigationBar="false" />
+                <local:MyItems/>
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Home">
             <x:Arguments>
-                <ContentPage Title="Home" NavigationPage.HasNavigationBar="false" />
+                <local:HomeItems/>
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Shipped Items">
             <x:Arguments>
-                <ContentPage Title="Shipped Items" NavigationPage.HasNavigationBar="false" />
+                <local:ShippedItems/>
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
